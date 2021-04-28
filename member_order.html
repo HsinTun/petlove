@@ -22,6 +22,8 @@
         rel="stylesheet">
 
 
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
     <title>PetLove 派樂星球</title>
     <style>
 
@@ -781,12 +783,12 @@
                 <div class="l_options_box">
 
                     <li class="l__myaccount"><a href=""></a></li>
-                    <div class="l_myaccount_detail">
+                    <div class="l_myaccount_program">
                         <li><a href=""></a></li>
                         <li><a href=""></a></li>
                     </div>
                     <li class="l_order"><a href=""></a></li>
-                    <div class="l_order_detail">
+                    <div class="l_order_program">
                         <li><a href=""></a></li>
                         <li><a href=""></a></li>
                         <li><a href=""></a></li>
@@ -810,7 +812,50 @@
                             <div class="l_change_photo"></div>
 
                         </div>
+                        <div class="l_account_input">
+                            <div class="form-group col-md-2">
+                                <label for="validationTooltip01">會員姓名</label>
+                                <input type="text" class="form-control" id="validationTooltip01" placeholder="毛毛"
+                                    value="" required>
 
+                            </div>
+
+
+
+                            <div class="form-group col-md-2">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+
+                            <div class="form-group col-md-2">
+                                <label>手機</label>
+                                <input type="munber" class="form-control" id="" placeholder="">
+                            </div>
+
+                            <!-- 性別選擇 -->
+                            <div class="form-group">
+                                <label>性別</label><br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">男性</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">女性</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">其他</label>
+                                </div>
+
+                            </div>
+
+                            <button type="submit" class="btn">儲存</button>
+
+                        </div>
 
 
 
@@ -823,14 +868,176 @@
                     <!-- 更改密碼 -->
                     <div class="l_change_password_box">
                         <div class="l_change_password_title"></div>
+                        <h1></h1>
+                        <div class="l_password_input">
+                            <div class="l_form_group">
+                                <label>現在的密碼</label>
+                                <input type="text" class="" placeholder="">
+                            </div>
+                            <div class="l_form_group">
+                                <label>輸入新密碼</label>
+                                <input type="text" class="" placeholder="">
+                            </div>
+                            <div class="l_form_group">
+                                <label>確認密碼</label>
+                                <input type="text" class="" placeholder="">
+                            </div>
+                            <button type="submit" class="btn ">確認</button>
+
+
+                        </div>
+
+
+
+
+
+
+
                     </div>
 
 
                     <!-- 我的最愛 -->
                     <div class="l_my_favorite_box">
                         <div class="l_my_favorite_title"></div>
-                    </div>
 
+                        <div class="l_select">
+                            <input type="text" class="l_search"><svg class="">
+                                <use xlink:href="./images/Index/icomoon/symbol-defs.svg#"></use>
+
+                            </svg>
+                            <div class="dropdown ">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    排序依據
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item l_date" href="#">加入日期由新到舊</a>
+                                    <a class="dropdown-item l_hot" href="#">熱門程度優先</a>
+                                    <a class="dropdown-item l_high_price" href="#">價格由高至低</a>
+                                    <a class="dropdown-item l_low_price" href="#">價格由低至高</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="l_my_favorite_product">
+                            <div class="l_product_img"><img src="" alt=""></div>
+                            <div class="l_product_detail">
+                                <div class="l_product_name"></div>
+                                <div class="l_product_price"></div>
+                                <div class="l_product_time"></div>
+                            </div>
+                            <div class="l_button">
+                                <button class="l_put_cart"></button>
+                                <button class="l_delete"></button>
+                            </div>
+
+
+
+
+                        </div>
+
+                        <div class="l_more"></div>
+
+                        <!-- 我的最愛推薦商品  Flickity套件  -->
+                        <div class="l_recommend" data-flickity='{ "freeScroll": true, "freeScrollFriction": 0.03 }'>
+                            <li style="list-style: none;"><a style="text-decoration: none;" href="">
+                                    <div class="carousel-cell">
+
+                                        <div class="l_img">
+                                            <img src="./images/nook.jpg" alt="">
+
+
+                                            <button> 加入購物車</button>
+                                            <div class="l_button_box"></div>
+                                            <svg class="icon-heart">
+                                                <use xlink:href="./iconmoon/symbol-defs.svg#icon-heart"></use>
+                                            </svg>
+                                        </div>
+                                        <h4>【Natural Balance】低敏無穀地瓜雞肉犬糧│成犬配方</h4>
+                                        <h5>NT$1,135 - NT$3,899</h5>
+                                    </div>
+                                </a></li>
+                            <li style="list-style: none;"><a style="text-decoration: none;" href="">
+                                    <div class="carousel-cell">
+
+                                        <div class="l_img">
+                                            <img src="./images/nook.jpg" alt="">
+
+
+                                            <button> 加入購物車</button>
+                                            <div class="l_button_box"></div>
+                                            <svg class="icon-heart">
+                                                <use xlink:href="./iconmoon/symbol-defs.svg#icon-heart"></use>
+                                            </svg>
+                                        </div>
+                                        <h4>【Natural Balance】低敏無穀地瓜雞肉犬糧│成犬配方</h4>
+                                        <h5>NT$1,135 - NT$3,899</h5>
+                                    </div>
+                                </a></li>
+                            <li style="list-style: none;"><a style="text-decoration: none;" href="">
+                                    <div class="carousel-cell">
+
+                                        <div class="l_img">
+                                            <img src="./images/nook.jpg" alt="">
+
+
+                                            <button> 加入購物車</button>
+                                            <div class="l_button_box"></div>
+                                            <svg class="icon-heart">
+                                                <use xlink:href="./iconmoon/symbol-defs.svg#icon-heart"></use>
+                                            </svg>
+                                        </div>
+                                        <h4>【Natural Balance】低敏無穀地瓜雞肉犬糧│成犬配方</h4>
+                                        <h5>NT$1,135 - NT$3,899</h5>
+                                    </div>
+                                </a></li>
+                            <li style="list-style: none;"><a style="text-decoration: none;" href="">
+                                    <div class="carousel-cell">
+
+                                        <div class="l_img">
+                                            <img src="./images/nook.jpg" alt="">
+
+
+                                            <button> 加入購物車</button>
+                                            <div class="l_button_box"></div>
+                                            <svg class="icon-heart">
+                                                <use xlink:href="./iconmoon/symbol-defs.svg#icon-heart"></use>
+                                            </svg>
+                                        </div>
+                                        <h4>【Natural Balance】低敏無穀地瓜雞肉犬糧│成犬配方</h4>
+                                        <h5>NT$1,135 - NT$3,899</h5>
+                                    </div>
+                                </a></li>
+                            <li style="list-style: none;"><a style="text-decoration: none;" href="">
+                                    <div class="carousel-cell">
+
+                                        <div class="l_img">
+                                            <img src="./images/nook.jpg" alt="">
+
+
+                                            <button> 加入購物車</button>
+                                            <div class="l_button_box"></div>
+                                            <svg class="icon-heart">
+                                                <use xlink:href="./iconmoon/symbol-defs.svg#icon-heart"></use>
+                                            </svg>
+                                        </div>
+                                        <h4>【Natural Balance】低敏無穀地瓜雞肉犬糧│成犬配方</h4>
+                                        <h5>NT$1,135 - NT$3,899</h5>
+                                    </div>
+                                </a></li>
+
+
+
+
+
+                        </div>
+
+
+
+
+
+
+                    </div>
 
 
 
@@ -850,6 +1057,115 @@
                         </ul>
                         <div class="l_order_line"></div>
                     </div>
+
+
+                    <div class="l_order">
+                        <div class="l_order_item">
+                            <div class="l_date">2021-01-28</div>
+                            <div class="l_status"> 狀態</div>
+                            <div class="l_status_return"> 已取消</div>
+                            <div class="l_number">訂單編號:</div>
+                            <div class="l_number_return"> 202101251850253</div>
+                        </div>
+
+                        <div class="l_order_all">
+
+                            <!-- 訂單管理 收起 -->
+                            <div class="l_order_close">
+
+                                <div class="l_order_detail">
+                                    <div class="l_order_detail_img"><img src="" alt=""></div>
+                                    <div class="l_order_detail_name"></div>
+                                    <div class="l_order_detail_grid">
+                                        <div class="l_size"></div>
+                                        <div class="l_size_return"></div>
+                                        <div class="l_plan"></div>
+                                        <div class="l_plan_return"></div>
+                                    </div>
+                                    <div class="l_order_detail_price"></div>
+
+                                </div>
+
+                                <div class="l_order_detail_line"></div>
+                                <div class="l_order_detail_total">
+                                    <div class="l_total"></div>
+                                    <div class="l_total_return"></div>
+                                </div>
+                                <div class="l_order_arrow"><svg class="">
+                                        <use xlink:href="./images/Index/icomoon/symbol-defs.svg#"></use>
+                                    </svg></div>
+
+                            </div>
+
+                            <!-- 訂單管理 展開 -->
+                            <div class="l_order_open">
+                                <div class="l_order_ifn"></div>
+                                <div class="l_order_ifn_detail">
+                                    <div class="l_name"></div>
+                                    <div class="l_name_return"></div>
+                                    <div class="l_add"></div>
+                                    <div class="l_add_return"></div>
+                                    <div class="l_phone"></div>
+                                    <div class="l_phone_return"></div>
+                                    <div class="l_time"></div>
+                                    <div class="l_time_return"></div>
+                                    <div class="l_email"></div>
+                                    <div class="l_email_return"></div>
+                                    <div class="l_pay"></div>
+                                    <div class="l_pay_return"></div>
+                                </div>
+                                <div class="l_order_detail_line"></div>
+
+                                <div class="l_order_cancel"></div>
+                                <div class="l_order_cancel_return"></div>
+
+                                <div class="l_order_detail_line"></div>
+                                <div class="l_dog_img"><img src="" alt=""></div>
+                                <div class="l_order_button">
+                                    <div class="l_buy_again"></div>
+                                    <div class="l_reviews"></div>
+                                    <div class="l_return_product"></div>
+
+                                </div>
+                                <div class="l_cat_img"><img src="" alt=""></div>
+                                <div class="l_price_grid">
+                                    <div class="l_price"></div>
+                                    <div class="l_price_return"></div>
+                                    <div class="l_Shipping_fee"></div>
+                                    <div class="l_Shipping_fee_return"></div>
+                                    <div class="l_Shipping_discount"></div>
+                                    <div class="l_Shipping_discount_return"></div>
+                                    <div class="l_mao_coins"></div>
+                                    <div class="l_mao_coins_return"></div>
+                                    <div class="l_price_line"></div>
+                                    <div class="l_total_price"></div>
+                                    <div class="l_total_price_return"></div>
+
+
+
+
+
+                                </div>
+                                <div class="l_order_arrow"><svg class="">
+                                        <use xlink:href="./images/Index/icomoon/symbol-defs.svg#"></use>
+                                    </svg></div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
 
                     <!--週期訂單 -->
                     <div class="l_subscription_order_box">
@@ -891,29 +1207,12 @@
 
 
 
-
-
-
-
-
                 </div>
 
 
 
 
-
-
             </div>
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1085,7 +1384,7 @@
 
     <script src="./js/0_main/bootstrap.bundle.min.js"></script>
 
-
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 </html>
