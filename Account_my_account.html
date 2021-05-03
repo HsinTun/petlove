@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <link rel="stylesheet" href="./css/Account/account_main_left.css">
+    <link rel="stylesheet" href="./css/Account/Account_my_account.css">
 
     <title>PetLove 派樂星球</title>
     <style>
@@ -814,8 +815,7 @@
                                     <!-- 內層個人檔案 -->
                                     <div class="card l_threefloor">
 
-                                        <button class="btn btn-link collapsed threefloor l_btn_account"
-                                            onclick="location.href='Account_my_account.html'">
+                                        <button class="btn btn-link collapsed threefloor l_btn_account">
                                             個人檔案
                                         </button>
 
@@ -834,8 +834,7 @@
                                     <!-- 內層更改密碼 -->
                                     <div class="card l_threefloor">
 
-                                        <button class="btn btn-link collapsed threefloor l_btn_password  "
-                                            onclick="location.href='Account_change_assword.html'">
+                                        <button class="btn btn-link collapsed threefloor l_btn_password  ">
                                             更改密碼
                                         </button>
 
@@ -953,7 +952,8 @@
                     </div>
 
                     <div class="card">
-                        <button class="btn btn-link collapsed twofloor l_btn_contact">
+                        <button type="button" class="btn btn-link collapsed twofloor l_btn_contact" data-toggle="modal"
+                            data-target="#exampleModal" data-whatever="@mdo">
                             聯絡客服
                         </button>
 
@@ -970,42 +970,112 @@
         </div>
 
 
+
+
         <!-- 右側 項目管理切換 -->
         <div class="l_main_right">
 
             <!-- 個人檔案 -->
             <div class="l_my_account_box">
-                <div class="l_my_account_title"></div>
-                <h1></h1>
+                <div class="l_my_account_title"><svg xmlns="http://www.w3.org/2000/svg" width="489" height="108"
+                        viewBox="0 0 489 108">
+                        <g id="Group_629" data-name="Group 629" transform="translate(-705 -248)">
+                            <g id="Group_628" data-name="Group 628">
+                                <g id="Group_626" data-name="Group 626" transform="translate(-24 -3541)">
+                                    <text id="個人檔案" transform="translate(821 3843)" fill="#89a7c2" font-size="50"
+                                        font-family="YuGothicUI-Regular, Yu Gothic UI">
+                                        <tspan x="0" y="0">個人檔案</tspan>
+                                    </text>
+                                    <text id="My_account" data-name="My account" transform="translate(984 3888)"
+                                        fill="#89a7c2" font-size="26" font-family="Poppins-ExtraLight, Poppins"
+                                        font-weight="200">
+                                        <tspan x="0" y="0">My account</tspan>
+                                    </text>
+                                    <rect id="Rectangle_111" data-name="Rectangle 111" width="70" height="2"
+                                        transform="translate(729 3824)" fill="#89a7c2" />
+                                    <rect id="Rectangle_1002" data-name="Rectangle 1002" width="70" height="2"
+                                        transform="translate(1148 3879)" fill="#89a7c2" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <h3>管理你的檔案以保護你的帳戶</h3>
 
                 <div class="l_photo_box">
                     <div class="l_my_photo"></div>
-                    <div class="l_change_photo"></div>
+                    <div class="l_change_photo"><svg xmlns="http://www.w3.org/2000/svg" width="357.001" height="79.839"
+                            viewBox="0 0 357.001 79.839">
+                            <text id="檔案大小_:_最大1MB_檔案限制_:_.JPEG_.PNG" data-name="檔案大小 : 最大1MB
+                      檔案限制 :  .JPEG , .PNG" transform="translate(58.5 48.839)" fill="#707070" font-size="16"
+                                font-family="YuGothicUI-Regular, Yu Gothic UI">
+                                <tspan x="0" y="0">檔案大小</tspan>
+                                <tspan y="0" xml:space="preserve" font-family="Poppins-Regular, Poppins"> : </tspan>
+                                <tspan y="0">最大</tspan>
+                                <tspan y="0" font-family="Poppins-Regular, Poppins">1MB</tspan>
+                                <tspan x="0" y="25">檔案限制</tspan>
+                                <tspan y="25" xml:space="preserve" font-family="Poppins-Regular, Poppins"> : .JPEG ,.PNG
+                                </tspan>
+                            </text>
+                            <text id="更換大頭貼照片" transform="translate(17.5 19)" fill="#707070" font-size="18"
+                                font-family="YuGothicUI-Regular, Yu Gothic UI">
+                                <tspan x="0" y="0">更換大頭貼照片</tspan>
+                            </text>
+                            <line id="Line_29" data-name="Line 29" x2="357" y2="0.339" transform="translate(0 24)"
+                                fill="none" stroke="#89a7c2" stroke-width="1" />
+                        </svg>
+                    </div>
 
                 </div>
+
                 <div class="l_account_input">
-                    <div class="form-group col-md-2">
-                        <label for="validationTooltip01">會員姓名</label>
-                        <input type="text" class="form-control" id="validationTooltip01" placeholder="毛毛" value=""
-                            required>
-
-                    </div>
+                    <form class="c_donate_money_form">
 
 
 
-                    <div class="form-group col-md-2">
-                        <label for="inputEmail4">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                    </div>
 
-                    <div class="form-group col-md-2">
-                        <label>手機</label>
-                        <input type="munber" class="form-control" id="" placeholder="">
-                    </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label c_form_name ">
+                                姓名
+                            </label>
+
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control c_fast_donationNAME " placeholder="王X明" />
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="exampleFormControlInput1" class="col-sm-3 col-form-label c_form_name">
+                                Email
+                            </label>
+                            <div class="col-sm-8">
+                                <input type="email" class="form-control c_fast_email" placeholder="name@example.com" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label c_form_name"> 手機號碼 </label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control c_fast_cellphone" placeholder="09XX-XXX-XXX" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label c_form_name">
+                                收件地址
+                            </label>
+                            <div class="col-sm-8">
+                                <div id="dis" class="row c_donate_address c_receipt_dis city-selector"
+                                    role="tw-city-selector" data-bootstrap-style data-has-zipcode></div>
+
+                                <input type="text" class="form-control c_receipt_dis c_fast_address"
+                                    placeholder="復興南路一段390號" />
+                            </div>
+                        </div>
+                    </form>
+
 
                     <!-- 性別選擇 -->
-                    <div class="form-group">
-                        <label>性別</label><br>
+                    <div class="form-group l_gender">
+                        <label class="l_gender_selection c_form_name">性別</label><br>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
                                 value="option1">
@@ -1024,7 +1094,7 @@
 
                     </div>
 
-                    <button type="submit" class="btn">儲存</button>
+                    <button type="submit" class="l_submit">儲存</button>
 
                 </div>
 
@@ -1038,28 +1108,70 @@
 
             <!-- 更改密碼 -->
             <div class="l_change_password_box" style="display: none;">
-                <div class="l_change_password_title"></div>
-                <h1></h1>
-                <div class="l_password_input">
-                    <div class="l_form_group">
-                        <label>現在的密碼</label>
-                        <input type="text" class="" placeholder="">
-                    </div>
-                    <div class="l_form_group">
-                        <label>輸入新密碼</label>
-                        <input type="text" class="" placeholder="">
-                    </div>
-                    <div class="l_form_group">
-                        <label>確認密碼</label>
-                        <input type="text" class="" placeholder="">
-                    </div>
-                    <button type="submit" class="btn ">確認</button>
-
-
+                <div class="l_change_password_title"><svg xmlns="http://www.w3.org/2000/svg" width="524" height="108"
+                        viewBox="0 0 524 108">
+                        <g id="Group_629" data-name="Group 629" transform="translate(-705 -248)">
+                            <g id="Group_628" data-name="Group 628">
+                                <g id="Group_626" data-name="Group 626" transform="translate(-24 -3541)">
+                                    <text id="更改密碼" transform="translate(821 3843)" fill="#89a7c2" font-size="50"
+                                        font-family="YuGothicUI-Regular, Yu Gothic UI">
+                                        <tspan x="0" y="0">更改密碼</tspan>
+                                    </text>
+                                    <text id="Change_password_" data-name="Change password "
+                                        transform="translate(917 3888)" fill="#89a7c2" font-size="26"
+                                        font-family="Poppins-ExtraLight, Poppins" font-weight="200">
+                                        <tspan x="0" y="0">Change password </tspan>
+                                    </text>
+                                    <rect id="Rectangle_111" data-name="Rectangle 111" width="70" height="2"
+                                        transform="translate(729 3824)" fill="#89a7c2" />
+                                    <rect id="Rectangle_1002" data-name="Rectangle 1002" width="70" height="2"
+                                        transform="translate(1183 3879)" fill="#89a7c2" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
                 </div>
+                <h3>為了保護你帳號的安全，請不要分享你的密碼給其他人</h3>
+
+
+                <div class="l_account_input">
+                    <form class="c_donate_money_form">
+                        <li class="l_forgot_password"><a href="">忘記密碼</a></li>
 
 
 
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label c_form_name ">
+                                現在的密碼
+                            </label>
+
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control c_fast_donationNAME " />
+                            </div>
+                        </div>
+
+
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label c_form_name"> 輸入新密碼 </label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control c_fast_cellphone"
+                                    placeholder="密碼需為 6 碼以上的英文或數字" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label c_form_name">
+                                確認密碼
+                            </label>
+                            <div class="col-sm-8">
+                                <div id="dis" class="row c_donate_address c_receipt_dis city-selector"
+                                    role="tw-city-selector" data-bootstrap-style data-has-zipcode></div>
+
+                                <input type="text" class="form-control c_receipt_dis c_fast_address" />
+                            </div>
+                        </div>
+                    </form>
+                    <button type="submit" class="l_submit">儲存</button>
+                </div>
 
 
 
@@ -1081,7 +1193,41 @@
     </div>
 
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">聯絡我們 Contact</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group ">
 
+                            <input type="text" class="form-control" id="recipient-name" placeholder="輸入您的姓名">
+                        </div>
+                        <div class="form-group ">
+
+                            <input type="text" class="form-control" id="recipient-name" placeholder="輸入您的電子信箱">
+                        </div>-
+                        <div class="form-group ">
+
+                            <textarea class="form-control" id="message-text"
+                                placeholder="輸入您的訊息。若是詢問特定商品, 請留下商品名稱,也歡迎留下電子信箱以外的聯絡方式,謝謝!"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn l_send_contact">發送</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 
 
@@ -1242,6 +1388,10 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
     <script src="./js/Account/account_main_left.js"></script>
+    <!-- 地址 -->
+    <script src="./js/Account/tw-city-selector.js"></script>
+    <script src="./js/Account/Account_my_account.js"></script>
+    <script src="./tw-city-selector.js"></script>
 </body>
 
 </html>

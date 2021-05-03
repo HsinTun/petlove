@@ -122,6 +122,12 @@ font-family: 'Poppins';
      background-color: #F9DD83;
      margin-top: 20px;
  }
+ .l_put_cart:hover,
+ .l_delete:hover{
+     color:#fff;
+     background-color: #89A7C2;
+   
+ }
  .l_put_cart svg,
  .l_delete svg{
      display: none;
@@ -274,7 +280,7 @@ h5 {
 
 }
 
-button:hover {
+.l_img button:hover {
     background-color: #F9DD83;
 }
 
