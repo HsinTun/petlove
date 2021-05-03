@@ -659,9 +659,10 @@
   .pethotel_woof {
     width: 25px;
     height: 25px;
-
+    
     stroke: var(--mainblue);
   }
+  
 
   .textinlinewoof {
     display: flex;
@@ -691,6 +692,13 @@
     width: 25px;
     height: 25px;
     margin-right: 5px;
+    fill: var(--mainblue);
+  }
+  .textinlinewoof svg
+  
+{
+  stroke: var(--mainblue);
+    fill: var(--mainblue);
   }
 
   #gotop {
