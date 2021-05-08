@@ -318,7 +318,8 @@ h5 {
 
 .l_my_favorite_title_mobile,
 .l_button_mobile,
-.l_push_cart{
+.l_push_cart,
+.l_user_mobile{
     display: none;
 }
 }
