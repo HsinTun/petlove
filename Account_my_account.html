@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="./css/Account/account_main_left.css">
     <link rel="stylesheet" href="./css/Account/Account_my_account.css">
 
+    <link rel="stylesheet" href="./css/Account/Account_my_accountt_mobile.css">
+
     <title>PetLove 派樂星球</title>
     <style>
 
@@ -1000,108 +1002,160 @@
                         </g>
                     </svg>
                 </div>
+
+                <div class="l_my_account_title_mobile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="239" height="47" viewBox="0 0 239 47">
+                        <text id="我的帳戶" transform="translate(46 26)" fill="#89a7c2" font-size="24"
+                            font-family="YuGothicUI-Regular, Yu Gothic UI">
+                            <tspan x="0" y="0">我的帳戶</tspan>
+                        </text>
+                        <text id="_My_account" data-name=" My account" transform="translate(118 43)" fill="#89a7c2"
+                            font-size="12" font-family="Poppins-ExtraLight, Poppins" font-weight="200">
+                            <tspan x="0" y="0" xml:space="preserve"> My account</tspan>
+                        </text>
+                        <rect id="Rectangle_111" data-name="Rectangle 111" width="30" height="1"
+                            transform="translate(5 16)" fill="#89a7c2" />
+                        <rect id="Rectangle_165" data-name="Rectangle 165" width="30" height="1"
+                            transform="translate(199 39)" fill="#89a7c2" />
+                    </svg>
+
+
+                </div>
                 <h3>管理你的檔案以保護你的帳戶</h3>
+                <h4 style="display: none;"> 請勿分享你的密碼給其他人</h4>
+                <div class="l_account_togglebar_mobile">
+                    <li class="l_btn_account_mebile"><a href="#l_my_account_title_mobile">個人檔案</a></li>
+                    <li class="l_btn_password_mebile"><a href="#l_my_account_title_mobile">更改密碼</a></li>
+                </div>
+                <div class="l_yellow_line"></div>
 
-                <div class="l_photo_box">
-                    <div class="l_my_photo"></div>
-                    <div class="l_change_photo"><svg xmlns="http://www.w3.org/2000/svg" width="357.001" height="79.839"
-                            viewBox="0 0 357.001 79.839">
-                            <text id="檔案大小_:_最大1MB_檔案限制_:_.JPEG_.PNG" data-name="檔案大小 : 最大1MB
+                <div class="l_account_mebile">
+                    <div class="l_photo_box">
+                        <div class="l_my_photo"></div>
+                        <div class="l_change_photo"><svg xmlns="http://www.w3.org/2000/svg" width="357.001"
+                                height="79.839" viewBox="0 0 357.001 79.839">
+                                <text id="檔案大小_:_最大1MB_檔案限制_:_.JPEG_.PNG" data-name="檔案大小 : 最大1MB
                       檔案限制 :  .JPEG , .PNG" transform="translate(58.5 48.839)" fill="#707070" font-size="16"
-                                font-family="YuGothicUI-Regular, Yu Gothic UI">
-                                <tspan x="0" y="0">檔案大小</tspan>
-                                <tspan y="0" xml:space="preserve" font-family="Poppins-Regular, Poppins"> : </tspan>
-                                <tspan y="0">最大</tspan>
-                                <tspan y="0" font-family="Poppins-Regular, Poppins">1MB</tspan>
-                                <tspan x="0" y="25">檔案限制</tspan>
-                                <tspan y="25" xml:space="preserve" font-family="Poppins-Regular, Poppins"> : .JPEG ,.PNG
-                                </tspan>
-                            </text>
-                            <text id="更換大頭貼照片" transform="translate(17.5 19)" fill="#707070" font-size="18"
-                                font-family="YuGothicUI-Regular, Yu Gothic UI">
-                                <tspan x="0" y="0">更換大頭貼照片</tspan>
-                            </text>
-                            <line id="Line_29" data-name="Line 29" x2="357" y2="0.339" transform="translate(0 24)"
-                                fill="none" stroke="#89a7c2" stroke-width="1" />
-                        </svg>
-                    </div>
-
-                </div>
-
-                <div class="l_account_input">
-                    <form class="c_donate_money_form">
-
-
-
-
-                        <div class="form-group row">
-                            <label class="col-sm-3 col-form-label c_form_name ">
-                                姓名
-                            </label>
-
-                            <div class="col-sm-8">
-                                <input type="text" class="form-control c_fast_donationNAME " placeholder="王X明" />
-                            </div>
+                                    font-family="YuGothicUI-Regular, Yu Gothic UI">
+                                    <tspan x="0" y="0">檔案大小</tspan>
+                                    <tspan y="0" xml:space="preserve" font-family="Poppins-Regular, Poppins"> : </tspan>
+                                    <tspan y="0">最大</tspan>
+                                    <tspan y="0" font-family="Poppins-Regular, Poppins">1MB</tspan>
+                                    <tspan x="0" y="25">檔案限制</tspan>
+                                    <tspan y="25" xml:space="preserve" font-family="Poppins-Regular, Poppins"> : .JPEG
+                                        ,.PNG
+                                    </tspan>
+                                </text>
+                                <text id="更換大頭貼照片" transform="translate(17.5 19)" fill="#707070" font-size="18"
+                                    font-family="YuGothicUI-Regular, Yu Gothic UI">
+                                    <tspan x="0" y="0">更換大頭貼照片</tspan>
+                                </text>
+                                <line id="Line_29" data-name="Line 29" x2="357" y2="0.339" transform="translate(0 24)"
+                                    fill="none" stroke="#89a7c2" stroke-width="1" />
+                            </svg>
                         </div>
+                        <div class="l_change_photo_mobile">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="203" height="66.839"
+                                viewBox="0 0 203 66.839">
+                                <text id="檔案大小_:_最大1MB_檔案限制_:_.JPEG_.PNG" data-name="檔案大小 : 最大1MB
+                          檔案限制 :  .JPEG , .PNG" transform="translate(58.5 44.839)" fill="#707070" font-size="12"
+                                    font-family="YuGothicUI-Regular, Yu Gothic UI">
+                                    <tspan x="0" y="0">檔案大小</tspan>
+                                    <tspan y="0" xml:space="preserve" font-family="Poppins-Regular, Poppins"> : </tspan>
+                                    <tspan y="0">最大</tspan>
+                                    <tspan y="0" font-family="Poppins-Regular, Poppins">1MB</tspan>
+                                    <tspan x="0" y="18">檔案限制</tspan>
+                                    <tspan y="18" xml:space="preserve" font-family="Poppins-Regular, Poppins"> : .JPEG ,
+                                        .PNG</tspan>
+                                </text>
+                                <text id="更換大頭貼照片" transform="translate(17.5 15)" fill="#707070" font-size="14"
+                                    font-family="YuGothicUI-Regular, Yu Gothic UI">
+                                    <tspan x="0" y="0">更換大頭貼照片</tspan>
+                                </text>
+                                <line id="Line_29" data-name="Line 29" x2="203" transform="translate(0 20)" fill="none"
+                                    stroke="#89a7c2" stroke-width="1" />
+                            </svg>
 
-                        <div class="form-group row">
-                            <label for="exampleFormControlInput1" class="col-sm-3 col-form-label c_form_name">
-                                Email
-                            </label>
-                            <div class="col-sm-8">
-                                <input type="email" class="form-control c_fast_email" placeholder="name@example.com" />
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-sm-3 col-form-label c_form_name"> 手機號碼 </label>
-                            <div class="col-sm-8">
-                                <input type="text" class="form-control c_fast_cellphone" placeholder="09XX-XXX-XXX" />
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-sm-3 col-form-label c_form_name">
-                                收件地址
-                            </label>
-                            <div class="col-sm-8">
-                                <div id="dis" class="row c_donate_address c_receipt_dis city-selector"
-                                    role="tw-city-selector" data-bootstrap-style data-has-zipcode></div>
-
-                                <input type="text" class="form-control c_receipt_dis c_fast_address"
-                                    placeholder="復興南路一段390號" />
-                            </div>
-                        </div>
-                    </form>
-
-
-                    <!-- 性別選擇 -->
-                    <div class="form-group l_gender">
-                        <label class="l_gender_selection c_form_name">性別</label><br>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                value="option1">
-                            <label class="form-check-label" for="inlineRadio1">男性</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                value="option2">
-                            <label class="form-check-label" for="inlineRadio2">女性</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                value="option2">
-                            <label class="form-check-label" for="inlineRadio2">其他</label>
                         </div>
 
                     </div>
 
-                    <button type="submit" class="l_submit">儲存</button>
+                    <div class="l_account_input">
+                        <form class="c_donate_money_form">
+
+
+
+
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label c_form_name ">
+                                    姓名
+                                </label>
+
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control c_fast_donationNAME " placeholder="王X明" />
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="exampleFormControlInput1" class="col-sm-3 col-form-label c_form_name">
+                                    Email
+                                </label>
+                                <div class="col-sm-8">
+                                    <input type="email" class="form-control c_fast_email"
+                                        placeholder="name@example.com" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label c_form_name"> 手機號碼 </label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control c_fast_cellphone"
+                                        placeholder="09XX-XXX-XXX" />
+                                </div>
+                            </div>
+                            <div class="form-group row l_add_moible">
+                                <label class="col-sm-3 col-form-label c_form_name">
+                                    收件地址
+                                </label>
+                                <div class="col-sm-8 ">
+                                    <div id="dis" class="row c_donate_address c_receipt_dis city-selector"
+                                        role="tw-city-selector" data-bootstrap-style data-has-zipcode></div>
+
+                                    <input type="text" class="form-control c_receipt_dis c_fast_address"
+                                        placeholder="復興南路一段390號" />
+                                </div>
+                            </div>
+                        </form>
+
+
+                        <!-- 性別選擇 -->
+                        <div class="form-group l_gender">
+                            <label class="l_gender_selection c_form_name">性別</label><br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                    value="option1">
+                                <label class="form-check-label" for="inlineRadio1">男性</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2">
+                                <label class="form-check-label" for="inlineRadio2">女性</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2">
+                                <label class="form-check-label" for="inlineRadio2">其他</label>
+                            </div>
+
+                        </div>
+
+                        <button type="submit" class="l_submit">儲存</button>
+
+                    </div>
+
+
+
 
                 </div>
-
-
-
-
-
 
 
             </div>
@@ -1131,6 +1185,7 @@
                         </g>
                     </svg>
                 </div>
+
                 <h3>為了保護你帳號的安全，請不要分享你的密碼給其他人</h3>
 
 

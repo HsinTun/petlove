@@ -10,6 +10,8 @@ $('.l_btn_order').click(function () {
     $('.l_bottomline').css('transform', 'translateX(0px)').css('transition', '.0s');
 
 
+
+
     $('.l_order_management_detail').children().eq(0).show();
     $('.l_order_management_detail').children().eq(0).siblings().hide();
 
@@ -18,10 +20,9 @@ $('.l_btn_order').click(function () {
 // 待付款
 $('.l_waiting_payment').click(function () {
 
-
-
-
     $('.l_bottomline').css('transform', 'translateX(0px)').css('transition', '.5s');
+
+    $('.l_bottomline_mobile').css('transform', 'translateX(2px)').css('transition', '.5s');
 
 
     $('.l_order_management_detail').children().eq(0).show();
@@ -34,6 +35,8 @@ $('.l_waiting_payment').click(function () {
 $('.l_waiting_picked').click(function () {
 
     $('.l_bottomline').css('transform', 'translateX(165px)').css('transition', '.5s');
+
+    $('.l_bottomline_mobile').css('transform', 'translateX(65px)').css('transition', '.5s');
 
     $('.l_order_management_detail').children().eq(1).show();
     $('.l_order_management_detail').children().eq(1).siblings().hide();
@@ -50,6 +53,8 @@ $('.l_transport').click(function () {
 
     $('.l_bottomline').css('transform', 'translateX(325px)').css('transition', '.5s');
 
+    $('.l_bottomline_mobile').css('transform', 'translateX(129px)').css('transition', '.5s');
+
     $('.l_order_management_detail').children().eq(2).show();
     $('.l_order_management_detail').children().eq(2).siblings().hide();
 
@@ -59,6 +64,9 @@ $('.l_transport').click(function () {
 $('.l_finish').click(function () {
 
     $('.l_bottomline').css('transform', 'translateX(480px)').css('transition', '.5s');
+
+    $('.l_bottomline_mobile').css('transform', 'translateX(186px)').css('transition', '.5s');
+
     $('.l_order_management_detail').children().eq(3).show();
     $('.l_order_management_detail').children().eq(3).siblings().hide();
 
@@ -69,6 +77,8 @@ $('.l_cancel').click(function () {
 
     $('.l_bottomline').css('transform', 'translateX(620px)').css('transition', '.5s');
 
+    $('.l_bottomline_mobile').css('transform', 'translateX(233px)').css('transition', '.5s');
+
     $('.l_order_management_detail').children().eq(4).show();
     $('.l_order_management_detail').children().eq(4).siblings().hide();
 
@@ -78,6 +88,8 @@ $('.l_cancel').click(function () {
 $('.l_return').click(function () {
 
     $('.l_bottomline').css('transform', 'translateX(758px)').css('transition', '.5s');
+
+    $('.l_bottomline_mobile').css('transform', 'translateX(282px)').css('transition', '.5s');
 
     $('.l_order_management_detail').children().eq(5).show();
     $('.l_order_management_detail').children().eq(5).siblings().hide();
@@ -106,6 +118,7 @@ $('.l_btn_subscription').click(function () {
 $('.l_subscribing').click(function () {
 
     $('.l_bottomline_1').css('transform', 'translateX(-2px)').css('transition', '.5s');
+    $('.l_bottomline_1_mobile').css('transform', 'translateX(0px)').css('transition', '.5s');
 
     $('.l_subscription_order_detail').children().eq(0).show();
     $('.l_subscription_order_detail').children().eq(0).siblings().hide();
@@ -117,6 +130,8 @@ $('.l_subscribing').click(function () {
 $('.l_unsubscribe').click(function () {
 
     $('.l_bottomline_1').css('transform', 'translateX(205px)').css('transition', '.5s');
+    $('.l_bottomline_1_mobile').css('transform', 'translateX(100px)').css('transition', '.5s');
+
 
     $('.l_subscription_order_detail').children().eq(1).show();
     $('.l_subscription_order_detail').children().eq(1).siblings().hide();
@@ -128,6 +143,7 @@ $('.l_unsubscribe').click(function () {
 $('.l_end_subscription').click(function () {
 
     $('.l_bottomline_1').css('transform', 'translateX(423px)').css('transition', '.5s');
+    $('.l_bottomline_1_mobile').css('transform', 'translateX(205px)').css('transition', '.5s');
 
     $('.l_subscription_order_detail').children().eq(2).show();
     $('.l_subscription_order_detail').children().eq(2).siblings().hide();
@@ -161,6 +177,7 @@ $('.l_btn_walking').click(function () {
 $('.l_walking_patment').click(function () {
 
     $('.l_bottomline_2').css('transform', 'translateX(0px)').css('transition', '.5s');
+    $('.ll_bottomline_2_mobile').css('transform', 'translateX(0px)').css('transition', '.5s');
 
     $('.l_walking_service_order').children().eq(0).show();
     $('.l_walking_service_order').children().eq(0).siblings().hide();
@@ -171,6 +188,7 @@ $('.l_walking_patment').click(function () {
 $('.l_walking_reservation').click(function () {
 
     $('.l_bottomline_2').css('transform', 'translateX(205px)').css('transition', '.5s');
+    $('.l_bottomline_2_mobile').css('transform', 'translateX(97px)').css('transition', '.5s');
 
     $('.l_walking_service_order').children().eq(1).show();
     $('.l_walking_service_order').children().eq(1).siblings().hide();
@@ -181,11 +199,65 @@ $('.l_walking_reservation').click(function () {
 $('.l_walking_end').click(function () {
 
     $('.l_bottomline_2').css('transform', 'translateX(423px)').css('transition', '.5s');
+    $('.l_bottomline_2_mobile').css('transform', 'translateX(204px)').css('transition', '.5s');
 
     $('.l_walking_service_order').children().eq(2).show();
     $('.l_walking_service_order').children().eq(2).siblings().hide();
 
 });
+
+
+
+// 手機
+$('.l_order_mobile').click(function () {
+    $('.l_order_management_detail').show();
+    $('.l_order_management_program').show();
+
+    $('.l_subscription_order_box').hide();
+
+    $('.l_walking_order_box').hide();
+
+    $(this).children().css('color', '#89A7C2');
+    $(this).siblings().children().css('color', '#CCCCCC');
+
+    $('.l_bottomline_mobile').css('transform', 'translateX(2px)').css('transition', '.0s');
+    $('.l_order_management_detail').children().eq(0).show();
+    $('.l_order_management_detail').children().eq(0).siblings().hide();
+
+});
+$('.l_subscription_mobile').click(function () {
+    $('.l_order_management_detail').hide();
+    $('.l_order_management_program').hide();
+
+    $('.l_subscription_order_box').show();
+
+    $('.l_walking_order_box').hide();
+
+    $(this).children().css('color', '#89A7C2');
+    $(this).siblings().children().css('color', '#CCCCCC');
+
+    $('.l_bottomline_1_mobile').css('transform', 'translateX(0px)').css('transition', '.0s');
+    $('.l_subscription_order_detail').children().eq(0).show();
+    $('.l_subscription_order_detail').children().eq(0).siblings().hide();
+
+});
+
+$('.l_walking_mobile').click(function () {
+    $('.l_order_management_detail').hide();
+    $('.l_order_management_program').hide();
+
+    $('.l_subscription_order_box').hide();
+
+    $('.l_walking_order_box').show();
+
+    $(this).children().css('color', '#89A7C2');
+    $(this).siblings().children().css('color', '#CCCCCC');
+
+    $('.l_bottomline_2_mobile').css('transform', 'translateX(0px)').css('transition', '.0s');
+    $('.l_walking_service_order').children().eq(0).show();
+    $('.l_walking_service_order').children().eq(0).siblings().hide();
+
+})
 
 
 
@@ -201,7 +273,7 @@ $('.l_order_close_arrow').click(function () {
     $(this).parentsUntil('.l_one_order').find('.l_order_close_buttom').slideDown();
     $(this).parentsUntil('.l_one_order').find('.l_order_open_arrow').slideDown();
 
-    $(this).parentsUntil('.l_one_order').find('.l_order_all').addClass('l_walking_all_jq');
+    // $(this).parentsUntil('.l_one_order').find('.l_order_all').addClass('l_walking_all_jq');
 });
 
 
@@ -217,7 +289,7 @@ $('.l_order_open_arrow').click(function () {
     $(this).parentsUntil('.l_one_order').find('.l_order_close_arrow').slideDown();
 
 
-    $(this).parentsUntil('.l_one_order').find('.l_order_all').removeClass('l_walking_all_jq');
+    // $(this).parentsUntil('.l_one_order').find('.l_order_all').removeClass('l_walking_all_jq');
 });
 
 

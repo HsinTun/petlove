@@ -13,3 +13,26 @@ $('.l_btn_password').click(function () {
     $('.l_my_account_box').hide();
     $('.l_change_password_box').show();
 });
+
+// 手機
+$('.l_btn_account_mebile').click(function () {
+    $('.l_account_mebile').fadeIn();
+    $('.l_change_password_box').fadeOut();
+
+    $('.l_my_account_box h3').fadeIn()
+    $('.l_my_account_box h4').hide()
+
+    $('.l_yellow_line').css('transform', 'translateY(-10px) translateX(77px)').css('transition', '.5s');
+
+});
+
+$('.l_btn_password_mebile').click(function () {
+    console.log('hi')
+    $('.l_account_mebile').fadeOut();
+    $('.l_change_password_box').fadeIn();
+
+    $('.l_my_account_box h4').fadeIn()
+    $('.l_my_account_box h3').hide()
+
+    $('.l_yellow_line').css('transform', 'translateY(-10px) translateX(223px)').css('transition', '.5s');
+});

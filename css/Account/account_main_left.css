@@ -1,3 +1,5 @@
+@media only screen and (min-width: 1128px){
+    
 body {
     background-color: #F7F4EE;
 
@@ -95,8 +97,10 @@ body {
     color: #89A7C2;
     font-size: 18px;
     /* margin-top: 5px; */
+    text-align: left;
    
 }
+
 
 .onefloor {
     /* border-bottom: 1px solid #89A7C2; */
@@ -123,11 +127,6 @@ body {
     cursor: pointer;
 }
 
-/* 價錢範圍 */
-.aa_leftnaverber_box2 {
-    width: 72px;
-    height: 85px;
-}
 
 
 
@@ -187,6 +186,7 @@ body {
 
 .l_threefloor {
     margin-top: 8px;
+    
 
 }
 .l_photo_name{
@@ -219,20 +219,26 @@ body {
     justify-content: center;
 }
 
-#message-text {
-    height: 200px;
-}
+
 
 .modal-footer {
  border: 0;
     margin: 0 auto !important;
 
 }
-
+.modal-body form{
+    padding-left: 10px;
+}
 .modal-body {
-    padding: 50px;
+   
     padding-top: 10px;
     padding-bottom: 10px;
+    width: 100%;
+}
+.l_input input,
+.l_input textarea{
+   width: 100%;
+ 
 }
 
 .l_send_contact {
@@ -251,6 +257,7 @@ body {
     border-color: #fff;
     -webkit-box-shadow: 0px 0px 0px 3px #F9DD83;
     box-shadow: 0px 0px 0px 3px #F9DD83;
+    
 }
 
 .modal-header .close {
@@ -265,4 +272,5 @@ body {
     color: #707070;
     margin-top: 20px;
     padding-left: 10px;
+}
 }
