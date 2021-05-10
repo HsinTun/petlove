@@ -225,6 +225,7 @@ $('.l_order_mobile').click(function () {
     $('.l_order_management_detail').children().eq(0).siblings().hide();
 
 });
+
 $('.l_subscription_mobile').click(function () {
     $('.l_order_management_detail').hide();
     $('.l_order_management_program').hide();

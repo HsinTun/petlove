@@ -159,8 +159,8 @@ border-bottom: 1px solid #89A7C2;
  .l_recommend {
     width: 100%;
     margin: 0px auto 100px;
-    border: 1px red solid;
-   
+    /* border: 1px red solid; */
+   margin-top: -300px;
     
 
 }

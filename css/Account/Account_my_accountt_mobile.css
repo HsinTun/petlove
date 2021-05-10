@@ -224,8 +224,16 @@ label{
 }
 
 .c_donate_address .form-group {
-    margin-right: 3%;
+    width: 90px;
+    margin-right: 10px;
     margin-top: 0;
+    padding: 0 0;
+    
+   
+}
+#dis .form-group select{
+    background-color: #fff;
+    padding-left: 5px;
 }
 .form-control:focus {
     border-color: #fff;
@@ -238,12 +246,16 @@ label{
     height: 30px;
     color: var(--mainpink);
 }
+.form-control:disabled, .form-control:read-only{
+    border-color: #fff !important;
+}
 
 .c_donate_warning {
+    
     color: var(--mainpink);
     /* float: right; */
     margin-top: 10px;
-    margin-left: 10px;
+   
 }
 .c_donate_money_form .form-control {
     border: 0;

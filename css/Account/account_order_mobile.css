@@ -74,7 +74,7 @@
    
     display: flex;
     justify-content: space-evenly;
-   
+    padding-left:0;
 
 }
 .l_order_management_program li,
@@ -434,16 +434,18 @@ text-align: center;
 .l_subscription_order_program ul{
     display: flex;
     justify-content: space-evenly;
+    padding-left: 0px;
     
 }
 .l_subscription_order_program li{
    
 }
-.l_line_box_1_mobile{
+.l_line_box_1_mobile,
+.l_line_box_2_mobile{
     width: 75%;
     height: 10px;
     /* border: 1px solid red; */
-    margin: -14px  auto 10px ;
+    margin: -15px  auto  ;
     
 
 }
@@ -478,6 +480,7 @@ text-align: center;
 .l_walking_order_program ul{
     display: flex;
     justify-content: space-evenly;
+    padding-left: 0;
 }
 
 .l_bottomline_2_mobile{

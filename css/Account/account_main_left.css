@@ -272,11 +272,6 @@ body {
     color: #707070;
     margin-top: 20px;
     padding-left: 10px;
-}
-.l_user_mobile,
-.l_photo_name,
-.l_member_photo,
-.l_user_order{
-    display: none;
+
 }
 }

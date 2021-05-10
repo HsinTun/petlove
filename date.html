@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/0_main/reset.css" type="text/css" />
+
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+
+    <title>PetLove 派樂星球</title>
+</head>
+<style>
+
+</style>
+
+
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col p-3">
+                <form>
+                    <input class="form-date form-control d-inline-block" name="date['start']" type="text"
+                        placeholder="入住日期" readonly="readonly" style="width:10em;"> - <input
+                        class="form-date form-control d-inline-block" name="date['end']" type="text" placeholder="退房日期
+                        " readonly="readonly" style="width:10em;">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="./js/0_main/jquery-3.5.1.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+        </script>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+
+    <script>
+        $('.form-date').flatpickr({
+            enableTime: false,
+            dateFormat: "Y-n-j",
+            "locale": "ja",
+        });
+
+    </script>
+</body>
+
+</html>

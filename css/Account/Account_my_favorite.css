@@ -167,6 +167,7 @@ border-bottom: 1px solid #89A7C2;
  .l_recommend {
     width: 800px;
     margin: 0px auto 100px;
+    margin-top: -500px;
 
 }
 .flickity-viewport{
@@ -202,21 +203,22 @@ border-bottom: 1px solid #89A7C2;
 
 }
 
-h4 {
+.carousel-cell h4 {
     font-size: 16px;
     color: #707070;
     letter-spacing: 1px;
     line-height: 25px;
-
+   text-align: center;
 
 }
 
-h5 {
+.carousel-cell h5 {
     font-size: 18px;
     /* border: 1px solid red; */
     text-align: center;
     color: #707070;
     letter-spacing: 1px;
+  
 
 }
 

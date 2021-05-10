@@ -112,11 +112,23 @@ label{
 /* 地址 */
 .c_donate_address {
     margin: 0;
+    
+    
 }
-
+.l_add_moible {
+    width: 140px;
+    /* display: flex; */
+}
+#dis .form-group select{
+    background-color: #fff;
+}
+.row{
+    flex-wrap: nowrap;
+}
 .c_donate_address .form-group {
-    margin-right: 3%;
+   padding: 0 0;
     margin-top: 0;
+   margin-right: 10px;
 }
 .form-control:focus {
     border-color: #fff;
@@ -128,6 +140,9 @@ label{
     width: 30px;
     height: 30px;
     color: var(--mainpink);
+}
+.c_receipt_dis {
+    width: 365px;
 }
 
 .c_donate_warning {
@@ -218,8 +233,10 @@ label{
 .l_my_account_title_mobile,
 .l_account_togglebar_mobile,
 .l_change_photo_mobile,
-h4{
+.l_my_account_box h4{
     display: none;
 }
+
+
 
 }

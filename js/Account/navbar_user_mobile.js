@@ -3,13 +3,17 @@ $('.icon-user').click(function () {
     $('.l_user_mobile').fadeToggle();
     $('.l_black').fadeToggle();
 
+
+
 });
 
 
-$('.l_btn_account').click(function () {
+$('.l_btn_account_m').click(function () {
 
     $('.l_user_mobile').fadeToggle();
     $('.l_black').fadeToggle();
+
+
 
 });
 $('.l_btn_order').click(function () {
