@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="./css/0_main/reset.css" type="text/css" />
-  <link rel="stylesheet" href="./css/0_main/bootstrap.min.css" type="text/css" />
+  <!-- <link rel="stylesheet" href="./css/0_main/bootstrap.min.css" type="text/css" /> -->
   <link rel="stylesheet" href="./css/0_main/navbar/mobile/style.css">
   <link rel="stylesheet" href="./css/0_main/navbar/web/style.css">
 
@@ -15,6 +15,8 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+
 
 
 
@@ -27,7 +29,7 @@
     rel="stylesheet">
 
 
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
   <link rel="stylesheet" href="./css/0_main/flickity.css">
 
   <link rel="stylesheet" href="./css/Account/account_main_left.css">
@@ -775,8 +777,12 @@
 
   <!--  navbar user手機板-->
 
-  <div class="l_user_mobile" style="display: none;">
+  <div class="l_user_mobile">
+    <div class="l_g-right">
+      <span></span>
+      <span></span>
 
+    </div>
     <div class="l_photo_name">
       <div class="l_member_photo"></div>
       <div class="l_member_name">毛毛</div>
@@ -822,8 +828,8 @@
       <div class="card">
         <div class="card-header" id="headingThree">
           <h2 class="mb-0">
-            <button class="btn btn-link collapsed onefloor" type="button" data-toggle="collapse"
-              data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+            <button class="btn btn-link collapsed onefloor" type="button" data-bs-toggle="collapse"
+              data-bs-bstarget="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
               style="text-decoration: none;">
               會員中心
             </button>
@@ -841,8 +847,8 @@
             <div class="card">
               <div class="card-header" id="headingFive">
                 <h2 class="mb-0">
-                  <button class="btn btn-link collapsed twofloor" type="button" data-toggle="collapse"
-                    data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"
+                  <button class="btn btn-link collapsed twofloor" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"
                     style="text-decoration: none;">
                     我的帳戶
                   </button>
@@ -901,8 +907,8 @@
             <div class="card">
               <div class="card-header" id="headingSix"></div>
               <h2 class="mb-0">
-                <button class="btn btn-link collapsed twofloor" type="button" data-toggle="collapse"
-                  data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"
+                <button class="btn btn-link collapsed twofloor" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"
                   style="text-decoration: none;">
                   訂單管理
                 </button>
@@ -1079,8 +1085,7 @@
                   <tspan y="0">最大</tspan>
                   <tspan y="0" font-family="Poppins-Regular, Poppins">1MB</tspan>
                   <tspan x="0" y="25">檔案限制</tspan>
-                  <tspan y="25" xml:space="preserve" font-family="Poppins-Regular, Poppins"> : .JPEG
-                    ,.PNG
+                  <tspan y="25" xml:space="preserve" font-family="Poppins-Regular, Poppins"> : .JPEG,.PNG
                   </tspan>
                 </text>
                 <text id="更換大頭貼照片" transform="translate(17.5 19)" fill="#707070" font-size="18"
@@ -1157,6 +1162,12 @@
                   <input type="text" class="form-control c_receipt_dis c_fast_address" placeholder="復興南路一段390號" />
                 </div>
               </div>
+              <div class="l_add_arrow_1"><svg class="icon-keyboard_arrow_down">
+                  <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-keyboard_arrow_down"></use>
+                </svg></div>
+              <div class="l_add_arrow_2"><svg class="icon-keyboard_arrow_down">
+                  <use xlink:href="./images/index/icomoon/symbol-defs.svg#icon-keyboard_arrow_down"></use>
+                </svg></div>
             </form>
 
 
@@ -1223,7 +1234,7 @@
 
         <div class="l_account_input">
           <form class="c_donate_money_form">
-            <li class="l_forgot_password"><a href="">忘記密碼</a></li>
+
 
 
 
@@ -4601,16 +4612,16 @@
             </div>
           </div>
           <div class="dropdown ">
-            <button class="btn dropdown-toggle l_array" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
+            <button class="btn dropdown-toggle  l_array" type="button" id="dropdownMenuButton1"
+              data-bs-toggle="dropdown" aria-expanded="false">
               排序依據
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item l_date" href="#">加入日期由新到舊</a>
-              <a class="dropdown-item l_hot" href="#">熱門程度優先</a>
-              <a class="dropdown-item l_high_price" href="#">價格由高至低</a>
-              <a class="dropdown-item l_low_price" href="#">價格由低至高</a>
-            </div>
+            <ul class="dropdown-menu l_array2" aria-labelledby="dropdownMenuButton1">
+              <li class="l_date"><a class="dropdown-item " href="#l_select">加入日期由新到舊</a></li>
+              <li class="l_hot"><a class="dropdown-item " href="#l_select">熱門程度優先</a></li>
+              <li class="l_high_price"><a class="dropdown-item " href="#l_select">價格由高至低</a></li>
+              <li class="l_low_price"><a class="dropdown-item " href="#l_select">價格由低至高</a></li>
+            </ul>
           </div>
         </div>
 
@@ -5335,22 +5346,7 @@
     integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
     crossorigin="anonymous"></script>
 
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
-    </script> -->
 
-  <!-- <script src="./js/0_main/jquery-3.5.1.js"></script> -->
-  <!-- <script src="./js/0_main/bootstrap.bundle.min.js"></script> -->
-
-  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-    crossorigin="anonymous"></script>-->
-  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>  -->
 
 
 

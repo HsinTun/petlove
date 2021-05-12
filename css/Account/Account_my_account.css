@@ -14,6 +14,7 @@
     /* border: 1px solid red; */
     margin-right: 50px;
     margin-bottom: 100px;
+
     
 
 }
@@ -155,23 +156,45 @@ label{
     border: 0;
   
 }
+.l_add_moible .c_fast_address{
+    margin-top: 10px;
+}
+
+.l_add_arrow_1{
+    display: inline-block;
+    position: relative;
+    top: -82px;
+    left: 215px;
+    z-index: 8;
+    /* border: 1px solid red; */
+} 
+.l_add_arrow_2{
+    display: inline-block;
+    position: relative;
+    top: -82px;
+    left: 315px;
+    z-index: 8;
+    /* border: 1px solid red; */
+} 
+
+
+
+
+/* 性別 */
+.form-check-input:checked{
+    background-color:var(--mainyellow);
+    border-color:var(--mainyellow);
+    
+}
+
+
+
 /* 改密碼 */
 .l_change_password_box button{
     margin-top: 50px;
 }
-.c_donate_money_form li{
-   list-style: none;
-}
-.l_forgot_password {
-    display: inline-block;
-    text-decoration: none;
-    position: relative;
-    left: 95%;
-    top: 50px;
-}
-.l_forgot_password a{
-    text-decoration: none;
-}
+
+
 
 /* 聯絡客服 */
 .modal-content {
@@ -228,12 +251,22 @@ label{
     padding-left: 10px;
 }
 
+.footer,
+.footer2{
+    margin-top: -300px;
+    
+}
+
+
+
+
 
 .l_change_password_title_mobile,
 .l_my_account_title_mobile,
 .l_account_togglebar_mobile,
 .l_change_photo_mobile,
-.l_my_account_box h4{
+.l_my_account_box h4,
+.l_user_mobile{
     display: none;
 }
 

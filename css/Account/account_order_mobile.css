@@ -140,9 +140,7 @@
 
 
 
-body {
-    background-color: #F7F4EE;
-}
+
 .l_order_management_detail,.l_subscription_order_detail,.l_walking_service_order{
     width: 90%;
     margin: 0px auto;
@@ -239,7 +237,7 @@ letter-spacing: 1.2px;
 .l_order_detail {
 display: flex;
     flex-wrap: wrap;
-    margin: 40px auto;
+    margin: 50px auto;
     width: 90%;
 }
 
@@ -263,7 +261,7 @@ display: flex;
     display: grid;
     grid-template-columns: 100px 100px;
     Grid-template-rows: 23px 23px;
-    margin-top: -25px;
+    margin-top: -15px;
     padding-left: 70px;
     
 
@@ -286,8 +284,8 @@ text-align: center;
 }
 
 .l_order_detail_name {
-    width: 60%;
-    margin-left: 10px;
+    width: 62%;
+    /* margin-left: 10px; */
     
 }
 
@@ -507,16 +505,26 @@ text-align: center;
     /* border: 1px solid red; */
     display: grid;
     grid-template-columns:  90px
-    100px ;
-    Grid-template-rows: 20px 20px 20px 20px 20px ;
+    120px ;
+    Grid-template-rows: 20px 20px 20px 20px  ;
     margin-top: 10px;
     position: relative;
     top: -83px ;
     left: 110px;
 }
+.l_walking_detail .l_order_detail_name{
+    width: 62%;
+    margin-left: 10px;
+}
 
 .l_Walking_detail_grid .l_plan {
     padding: 0 0;
+}
+.l_Walking_detail_grid .l_date_return {
+    margin-top: 0;
+    font-size: 14px;
+    color: #707070;
+   
 }
 
 .l_walking_service_order .l_price_line {

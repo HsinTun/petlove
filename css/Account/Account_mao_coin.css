@@ -78,7 +78,7 @@
    
     display: flex;
     margin: 80px 0px 0 70px;
-    width: 40%;
+    width: 43%;
     justify-content: space-between;
 }
 
@@ -94,12 +94,12 @@
 }
 .l_coin_line{
    
-    /* border: 1px solid red; */
-    width: 45%;
+   
+    width:82%;
     height: 20px;
-    margin: 3px  60px 5px ;
+    margin: 3px auto 5px ;
     /* transform: translateX(345px); */
-    
+    /* border: 1px red solid; */
 }
 .l_coin_bottomline{
     width: 70px ;
@@ -145,6 +145,7 @@
     height: 3px;
     background-color: #F7F4EE;
     margin: 0 auto;
+   
 }
 .l_coin_rule h4{
     width: 800px;

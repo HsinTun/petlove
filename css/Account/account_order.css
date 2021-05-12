@@ -45,8 +45,8 @@
     
 }
 .l_order_management_program ul{
-    height: 20px;
-   
+    /* height: 20px; */
+
     display: flex;
     justify-content: space-evenly;
   /* border: 1px solid red; */
@@ -87,7 +87,7 @@
     width: 77%;
     height: 10px;
     /* border: 1px solid red; */
-    margin: 16px  auto 15px ;
+    margin: -10px  auto 15px ;
     
 }
 .l_bottomline,
@@ -225,8 +225,8 @@ body {
 
 }
 
-.l_order_detail_name {
-    margin-top: 20px;
+.l_walking_detail .l_order_detail_name {
+    margin-top: 40px;
 }
 
 .l_order_open_bottom {
@@ -383,7 +383,7 @@ body {
     width: 86%;
     height: 10px;
     /* border: 1px solid red; */
-    margin: -6px  auto 10px ;
+    margin: -10px  auto 10px ;
     
 
 }

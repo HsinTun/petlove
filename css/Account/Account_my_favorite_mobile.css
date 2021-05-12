@@ -38,21 +38,28 @@
 }
 
 .dropdown{
-    /* border: 1px solid red; */
-    width:150px ;
+    border: 1px solid #ccc;
+    width:180px ;
     background-color: #fff;
     text-align: center;
     border-radius: 5px;
-    color: #707070;
+ 
     
 
 }
+.show{
+    width: 180px;
 
+}
+ul .l_date{
+    height: 30px;
+    width: 100%;
+}
 
-
-.dropdown-item{
+.l_array li {
    color: #707070;
    font-size: 16px;
+  
 }
 
  

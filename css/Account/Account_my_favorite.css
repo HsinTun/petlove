@@ -29,28 +29,23 @@
     fill: #ccc;
    
 }
-.l_search{
-    /* border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: #F9DD83;
-    width: 200px; */
-   
-   
-}
-.l_icon-search{
-    /* position: relative;
-    left: -30px;
-    top: 6px; */
 
-
-}
-.dropdown{
+.l_array{
     width:180px ;
     background-color: #fff;
     text-align: center;
     border-radius: 5px;
     color: #707070;
     border: 2px solid #ccc;
+}
+.l_array:hover{
+    
+  color:var(--mainyellow);
+   
+}
+.l_dropdown-menu{
+    width:180px ;
+    
 }
 .input-group-append button {
     color: #707070;
@@ -66,7 +61,7 @@
    color: #707070;
    font-size: 16px;
 }
-::placeholder
+.form-control::-webkit-input-placeholder
 { 
     color: #ccc;
 
@@ -167,7 +162,9 @@ border-bottom: 1px solid #89A7C2;
  .l_recommend {
     width: 800px;
     margin: 0px auto 100px;
-    margin-top: -500px;
+    margin-top: -100px;
+    opacity: 0;
+    
 
 }
 .flickity-viewport{

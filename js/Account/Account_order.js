@@ -51,7 +51,7 @@ $('.l_waiting_picked').click(function () {
 // 運送中
 $('.l_transport').click(function () {
 
-    $('.l_bottomline').css('transform', 'translateX(325px)').css('transition', '.5s');
+    $('.l_bottomline').css('transform', 'translateX(320px)').css('transition', '.5s');
 
     $('.l_bottomline_mobile').css('transform', 'translateX(129px)').css('transition', '.5s');
 
@@ -63,7 +63,7 @@ $('.l_transport').click(function () {
 // 完成
 $('.l_finish').click(function () {
 
-    $('.l_bottomline').css('transform', 'translateX(480px)').css('transition', '.5s');
+    $('.l_bottomline').css('transform', 'translateX(465px)').css('transition', '.5s');
 
     $('.l_bottomline_mobile').css('transform', 'translateX(186px)').css('transition', '.5s');
 
@@ -75,7 +75,7 @@ $('.l_finish').click(function () {
 // 取消
 $('.l_cancel').click(function () {
 
-    $('.l_bottomline').css('transform', 'translateX(620px)').css('transition', '.5s');
+    $('.l_bottomline').css('transform', 'translateX(600px)').css('transition', '.5s');
 
     $('.l_bottomline_mobile').css('transform', 'translateX(233px)').css('transition', '.5s');
 
@@ -87,7 +87,7 @@ $('.l_cancel').click(function () {
 // 退貨
 $('.l_return').click(function () {
 
-    $('.l_bottomline').css('transform', 'translateX(758px)').css('transition', '.5s');
+    $('.l_bottomline').css('transform', 'translateX(738px)').css('transition', '.5s');
 
     $('.l_bottomline_mobile').css('transform', 'translateX(282px)').css('transition', '.5s');
 

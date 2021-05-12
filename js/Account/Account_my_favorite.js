@@ -1,26 +1,26 @@
 $('.l_date').click(function () {
 
-    let hotelName = $(this).html();
+    let hotelName = $(this).text();
 
-    $('.l_array').html(hotelName);
+    $('#dropdownMenuButton1').text(hotelName);
 });
 $('.l_hot').click(function () {
 
-    let hotelName = $(this).html();
+    let hotelName = $(this).text();
 
-    $('.l_array').html(hotelName);
+    $('#dropdownMenuButton1').text(hotelName);
 });
 $('.l_high_price').click(function () {
 
-    let hotelName = $(this).html();
+    let hotelName = $(this).text();
 
-    $('.l_array').html(hotelName);
+    $('#dropdownMenuButton1').text(hotelName);
 });
 $('.l_low_price').click(function () {
 
-    let hotelName = $(this).html();
-
-    $('.l_array').html(hotelName);
+    let hotelName = $(this).text();
+    console.log(hotelName)
+    $('#dropdownMenuButton1').text(hotelName);
 });
 
 //刪除商品
