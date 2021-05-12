@@ -237,7 +237,7 @@ $('.l_btn_favorite_m').click(function () {
     $('.l_recommend').css('margin-top', '0');
     $('.l_my_favorite_box').show();
     $('.l_for_you_recommend').show();
-    $('.l_recommend').css('opacity', '1').show();
+    $('.l_recommend').css('height', '380px').css('opacity', '1').show();
 
     $('.l_change_password_box').hide();
     $('.l_order_management').hide();

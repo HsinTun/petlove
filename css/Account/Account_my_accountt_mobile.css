@@ -340,7 +340,12 @@ label{
     z-index: 8;
     /* border: 1px solid red; */
 } 
-
+/* 性別 */
+.form-check-input:checked{
+    background-color:var(--mainyellow);
+    border-color:var(--mainyellow);
+    
+}
 /* 改密碼 */
 .l_change_password_box button{
     margin-top: 50px;

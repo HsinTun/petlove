@@ -167,7 +167,9 @@ border-bottom: 1px solid #89A7C2;
     width: 100%;
     margin: 0px auto 100px;
     /* border: 1px red solid; */
-   margin-top: -300px;
+   /* margin-top: -100px; */
+   height: 10px;
+   overflow: hidden;
     
 
 }
