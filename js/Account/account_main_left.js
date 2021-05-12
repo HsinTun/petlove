@@ -39,3 +39,7 @@ $('.l_btn_coin').click(function () {
     $('.l_member_detail').find('button').css('color', '#89A7C2');
     $(this).css('color', '#F9DD83')
 });
+$('.l_sign_out').click(function () {
+    $('.l_member_detail').find('button').css('color', '#89A7C2');
+    $(this).css('color', '#F9DD83')
+});
