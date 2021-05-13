@@ -20,33 +20,150 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <title>PetLove 派樂星球</title>
 </head>
 <style>
+    body {
+        height: 1800px;
+    }
 
+    .l_main_left {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        width: 400px;
+        height: 300px;
+        padding-left: 1px;
+        margin: 350px 1000px;
+
+    }
+
+    .l_money_oneday {
+        margin: 20px 0 0 40px;
+        font-size: 22px;
+        color: #707070;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    .l_booing_Check {
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .Check-in,
+    .Check-out {
+
+
+        width: 25px;
+        height: 30px;
+    }
+
+    .Check-in svg,
+    .Check-out svg {
+        width: 75%;
+        height: 75%;
+        object-fit: cover;
+        fill: #707070;
+        position: relative;
+        top: 40px;
+        left: 10px;
+    }
+
+    .Check-in_bar,
+    .Check-out_bar {
+        width: 170px;
+
+        /* border-radius: 10px; */
+        /* border: 1px solid #ccc; */
+    }
+
+    .l_Check-in_date,
+    .l_Check-out_date {
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding-left: 40px;
+        outline: none;
+    }
+
+    .l_number_pet {
+        width: 340px;
+        height: 50px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 0 28px;
+        outline: none;
+        padding-left: 30px;
+    }
+
+
+
+
+    .l_next_check {
+        width: 340px;
+        height: 50px;
+        background-color: #F9DD83;
+        border-radius: 5px;
+        margin: 20px auto;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .l_next_check a {
+        color: #707070;
+        font-size: 18px;
+        letter-spacing: 2px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .fixed {
+        position: fixed;
+        margin: 200px 1000px;
+        transition: 1s;
+    }
 </style>
 
 
 
 <body>
+    <div class="l_main_left">
+        <div class="l_money_oneday">NT$900/天</div>
+        <div class="l_booing_Check">
 
-    <div class="container">
-        <div class="row">
-            <div class="col p-3">
-                <form>
-                    <input class="form-date form-control d-inline-block" name="date['start']" type="text"
-                        placeholder="入住日期" readonly="readonly" style="width:10em;"> - <input
-                        class="form-date form-control d-inline-block" name="date['end']" type="text" placeholder="退房日期
-                        " readonly="readonly" style="width:10em;">
-                </form>
+            <div class="Check-in_bar">
+
+
+                <div class="input-group">
+                    <div class="Check-in">
+                        <svg class="hostel-Check-inr">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#hostel-Check-in"></use>
+                        </svg>
+                    </div>
+                    <input name="CheckIn" type="text" class="l_Check-in_date" id="CheckIn" placeholder="入住日期">
+                </div>
+
+            </div>
+            <div class="Check-out_bar">
+
+                <div class="input-group">
+                    <div class="Check-out">
+                        <svg class="hostel-Check-out">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#hostel-Check-out"></use>
+                        </svg>
+                    </div>
+                    <input name="CheckOut" type="text" class="l_Check-out_date" id="CheckOut" placeholder="退房日期">
+
+                </div>
             </div>
         </div>
+        <input type="text" class="l_number_pet" id="l_number_pet" placeholder="毛孩數量">
+        <div class="l_next_check"><a href="">確認預約日期</a></div>
     </div>
-
-
-
-
 
 
 
@@ -59,19 +176,86 @@
         </script>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-
+    <script src="./js/Booking/rangePlugin.js"></script>
 
     <script>
-        $('.form-date').flatpickr({
-            enableTime: false,
-            dateFormat: "Y-n-j",
-            "locale": "ja",
+
+
+        flatpickr("#CheckIn", {
+            dateFormat: 'm/d/Y',
+            allowInput: true,
+            minDate: "today",
+            plugins: [new rangePlugin({ input: "#CheckOut" })]
         });
 
+
+
+
+
+
+    </script>
+    <script>
+
+        // $(document).ready(function ($) {
+        //     var $sidebar = $(".l_main_left");
+        //     $window = $(window);
+        //     offset = $sidebar.offset();
+        //     topPadding = 20;
+        //     $window.scroll(function () {
+
+        //         if ($window.scrollTop() >= offset.top) {
+        //             // $sidebar.stop().animate({
+        //             //     marginTop: $window.scrollTop() - offset.top + topPadding
+
+        //             // });
+        //             $sidebar.animate({
+        //                 marginTop: 600
+        //             });
+        //             // console.log(marginTop)
+        //         }
+        //         else {
+        //             $sidebar.stop().animate({
+        //                 marginTop: 350
+        //             });
+        //         }
+        //     });
+        // });
+
+
+        let navTop = $('.l_main_left').offset().top;
+        console.log('navTop', navTop); //350
+
+        $(window).scroll(function () {
+
+            console.log('scollTop', $(this).scrollTop());
+
+            let scrollTop = $(this).scrollTop();
+
+
+            // console.log('scrollTop', scrollTop);
+
+
+
+            if (scrollTop >= navTop) {
+                $('.l_main_left').addClass('fixed');
+            }
+            else {
+                $('.l_main_left').removeClass('fixed');
+
+            }
+
+
+        })
     </script>
 </body>
 

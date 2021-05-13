@@ -1,12 +1,12 @@
-@media only screen and (min-width: 1128px){
+@media (min-width:100px) and (max-width: 1127px){
 
-.l_singleroom_title{
+.l_singleroom_title_mobile{
     margin-top: 200px;
     text-align: center;
 }
 
 .l_singleroom_pic{
-    width: 1200px;
+    width: 90%;
     /* border: 1px solid red; */
     margin: 100px auto ;
     display: flex;
@@ -15,7 +15,7 @@
 }
 .l_room_pic_1{
     width: 39%;
-    height: 700px;
+    height: 300px;
     
 }
 .l_room_pic_1 img{
@@ -26,13 +26,13 @@
 
 .carousel {
     width: 60%;
-    height: 700px;
+    height: 300px;
    
 }
 
 .carousel-cell {
     width: 100%;
-    height: 700px;
+    height: 300px;
     margin-right: 10px;
 
 }
@@ -59,7 +59,7 @@
 }
 
 .l_mian_detail{
-    width: 1200px;
+    width: 100%;
     display: flex;
     margin: 50px auto;
     /* border: 1px solid red; */
@@ -67,14 +67,17 @@
 }
 
 .l_main_right_1{
-    width: 60%;
+    width: 100%;
    
 }
 .l_subtitle{
-   font-size: 22px;
+   font-size: 16px;
     height: 50px;
     border-bottom: 1px solid #89A7C2;
     display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-evenly;
 }
 .l_subtitle a{
     text-decoration: none;
@@ -86,33 +89,38 @@
     color: var(--mainblue);
 }
 .l_subtitle_1{
-    margin-right: 150px;
+   font-size: 16px;
 }
 
 .l_yellow_line{
-    width: 100px;
-    height: 4px;
+    width: 80px;
+    height: 3px;
     background-color: var(--mainyellow);
-   transform: translateX(-4px)translateY(-15px);
+   transform: translateX(60px)translateY(-23px);
    
 }
 .l_main_item{
-    margin-top: 50px;
-    margin-bottom: 70px;
+   
+    margin: 50px auto 70px;
   
   
 }
 .l_item_title{
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 600;
     color: var(--mainblue);
-    margin-bottom: 30px;
+   
+    width: 95%;
+    margin: 0 auto 30px;
     
 }
 
 .l_item_standard{
-    font-size: 18px;
+    width: 95%;
+    font-size: 16px;
     display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
     
 }
 .l_size_1{
@@ -126,16 +134,19 @@
 
 .l_item_text span{
     font-weight: 600;
-   line-height: 30px;
+   line-height: 40px;
+   letter-spacing: 2px;
 }
 .l_item_text{
     line-height: 25px;
     letter-spacing: 2px;
-    width: 90%;
+    width:95%;
+    font-size: 14px;
+    margin: 0 auto;
 }
 .l_main_bottom,
 .l_main_right2_bottom{
-    width: 1200px;
+    width: 90%;
     margin: 0 auto;
     
 }
@@ -152,8 +163,8 @@
 }
 
 .l_hospital_logo_img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     margin: 0 auto;
 }
 .l_hospital_logo_img img{
@@ -191,10 +202,10 @@
 
 .l_main_right_2 .l_item_text{
      /* border: 1px solid red; */
-     margin-left: 150px;
-     width: 70%;
+    
+     width: 90%;
      margin-top: 50px;
-     font-size: 18px;
+     font-size: 14px;
      line-height: 30px;
 }
 .l_medical_all{
@@ -348,10 +359,13 @@
     text-decoration: none;
 }
 
-
-.l_singleroom_title_mobile{
+.l_singleroom_title,
+.l_footer_img,
+.l_main_left{
     display: none;
 }
+
+
 
 
 

@@ -21,9 +21,10 @@
 
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
-
+    <link rel="stylesheet" href="./css/Booking/booking_woof_detail_mobile.css">
     <link rel="stylesheet" href="./css/Booking/booking_woof_detail.css">
-
+    <!-- 日期套件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
     <title>PetLove 派樂星球</title>
 </head>
@@ -783,6 +784,25 @@
                 </g>
             </svg>
         </div>
+        <div class="l_singleroom_title_mobile"><svg xmlns="http://www.w3.org/2000/svg" width="235" height="55"
+                viewBox="0 0 235 55">
+                <g id="Group_153" data-name="Group 153" transform="translate(-720 -269)">
+                    <text id="咖啡王子" transform="translate(760 295)" fill="#89a7c2" font-size="24"
+                        font-family="YuGothicUI-Regular, Yu Gothic UI">
+                        <tspan x="0" y="0">咖啡王子</tspan>
+                    </text>
+                    <text id="Single_Room_" data-name="Single Room " transform="translate(812 318)" fill="#89a7c2"
+                        font-size="16" font-family="Poppins-ExtraLight, Poppins" font-weight="200">
+                        <tspan x="0" y="0">Single Room </tspan>
+                    </text>
+                    <rect id="Rectangle_111" data-name="Rectangle 111" width="30" height="1"
+                        transform="translate(720 284)" fill="#89a7c2" />
+                    <rect id="Rectangle_165" data-name="Rectangle 165" width="30" height="1"
+                        transform="translate(925 312)" fill="#89a7c2" />
+                </g>
+            </svg>
+
+        </div>
         <div class="l_singleroom_pic">
             <div class="l_room_pic_1"><img src="./images/Booking/l_catroom_img2.jpg" alt=""></div>
 
@@ -869,8 +889,39 @@
 
 
             <div class="l_main_left">
+                <div class="l_money_oneday">NT$900/天</div>
+                <div class="l_booing_Check">
+
+                    <div class="Check-in_bar">
 
 
+                        <div class="input-group">
+                            <div class="Check-in">
+                                <svg class="hostel-Check-inr">
+                                    <use xlink:href="./images/index/icomoon/symbol-defs.svg#hostel-Check-in"></use>
+                                </svg>
+                            </div>
+                            <input name="CheckIn" type="text" class="l_Check-in_date" id="CheckIn" placeholder="入住日期"
+                                autocomplete="off">
+                        </div>
+
+                    </div>
+                    <div class="Check-out_bar">
+
+                        <div class="input-group">
+                            <div class="Check-out">
+                                <svg class="hostel-Check-out">
+                                    <use xlink:href="./images/index/icomoon/symbol-defs.svg#hostel-Check-out"></use>
+                                </svg>
+                            </div>
+                            <input name="CheckOut" type="text" class="l_Check-out_date" id="CheckOut" placeholder="退房日期"
+                                autocomplete="off">
+
+                        </div>
+                    </div>
+                </div>
+                <input type="text" class="l_number_pet" id="l_number_pet" placeholder="毛孩數量">
+                <div class="l_next_check"><a href="">確認預約日期</a></div>
             </div>
         </div>
 
@@ -1127,6 +1178,22 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
     <script src="./js/Booking/booking_woof_detail.js"></script>
+
+    <!-- 日期套件 -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+
+    <script src="./js/Booking/rangePlugin.js"></script>
+    <script>
+        flatpickr("#CheckIn", {
+            dateFormat: 'm/d/Y',
+            allowInput: true,
+            minDate: "today",
+            plugins: [new rangePlugin({ input: "#CheckOut" })]
+        });
+
+
+    </script>
 </body>
 
 </html>
