@@ -23,50 +23,6 @@ $('.l_subtitle_2').click(function () {
 
 });
 
-// // 日期
-// var mainLeft = $('.l_main_left')
-// let navTop = $('.l_main_left').offset().top;
-// // console.log('navTop', navTop); //350
-
-// $(window).scroll(function () {
-
-//     // console.log('scollTop', $(this).scrollTop());
-
-//     let scrollTop = $(this).scrollTop();
-
-
-//     console.log('scrollTop', scrollTop);
-
-
-
-
-
-//     if (scrollTop >= navTop) {
-//         mainLeft.css({
-
-//             position: "relative",
-//             top: 500,
-//             transition: ".5s"
-
-//         });
-
-
-//     }
-
-//     else {
-//         mainLeft.css({
-//             position: "relative",
-//             top: 0,
-//             transition: ".5s"
-//         });
-
-
-//     }
-
-
-
-
-// });
 
 
 
