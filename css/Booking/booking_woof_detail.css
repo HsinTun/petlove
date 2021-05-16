@@ -263,6 +263,9 @@
     height: 300px;
     padding-left: 1px;
     background-color: #FBF9F6;
+    position: absolute;
+    top: 145%;
+    left: 65%;
     
 }
 
@@ -347,9 +350,32 @@
     font-weight: 600;
     text-decoration: none;
 }
+.l_main_left_2{
+    width: 65px;
+    height: 160px;
+background-color: var(--mainyellow);
+font-size: 22px;
+position: fixed;
+top: 70%;
+left: 97%;
+padding: 10px 15px;
+border-radius: 20px;
+}
+
+.l_main_left_2 button{
+    border: 0;
+    background-color: var(--mainyellow);
+}
 
 
-.l_singleroom_title_mobile{
+
+
+
+
+
+.l_singleroom_title_mobile,
+.l_yellow_line_mobile,
+.l_main_left_mobile{
     display: none;
 }
 

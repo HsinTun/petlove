@@ -831,6 +831,7 @@
 
                 </div>
                 <div class="l_yellow_line"></div>
+                <div class="l_yellow_line_mobile"></div>
                 <div class="l_type_detail">
                     <div class="l_main_item">
                         <div class="l_item_title">咖啡王子</div>
@@ -888,41 +889,8 @@
 
 
 
-            <div class="l_main_left">
-                <div class="l_money_oneday">NT$900/天</div>
-                <div class="l_booing_Check">
-
-                    <div class="Check-in_bar">
 
 
-                        <div class="input-group">
-                            <div class="Check-in">
-                                <svg class="hostel-Check-inr">
-                                    <use xlink:href="./images/index/icomoon/symbol-defs.svg#hostel-Check-in"></use>
-                                </svg>
-                            </div>
-                            <input name="CheckIn" type="text" class="l_Check-in_date" id="CheckIn" placeholder="入住日期"
-                                autocomplete="off">
-                        </div>
-
-                    </div>
-                    <div class="Check-out_bar">
-
-                        <div class="input-group">
-                            <div class="Check-out">
-                                <svg class="hostel-Check-out">
-                                    <use xlink:href="./images/index/icomoon/symbol-defs.svg#hostel-Check-out"></use>
-                                </svg>
-                            </div>
-                            <input name="CheckOut" type="text" class="l_Check-out_date" id="CheckOut" placeholder="退房日期"
-                                autocomplete="off">
-
-                        </div>
-                    </div>
-                </div>
-                <input type="text" class="l_number_pet" id="l_number_pet" placeholder="毛孩數量">
-                <div class="l_next_check"><a href="">確認預約日期</a></div>
-            </div>
         </div>
 
 
@@ -1036,7 +1004,49 @@
             </div>
         </div>
     </div>
+    <div class="l_main_left">
+        <div class="l_money_oneday">NT$900/天</div>
+        <div class="l_booing_Check">
 
+            <div class="Check-in_bar">
+
+
+                <div class="input-group">
+                    <div class="Check-in">
+                        <svg class="hostel-Check-inr">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#hostel-Check-in"></use>
+                        </svg>
+                    </div>
+                    <input name="CheckIn" type="text" class="l_Check-in_date" id="CheckIn" placeholder="入住日期"
+                        autocomplete="off">
+                </div>
+
+            </div>
+            <div class="Check-out_bar">
+
+                <div class="input-group">
+                    <div class="Check-out">
+                        <svg class="hostel-Check-out">
+                            <use xlink:href="./images/index/icomoon/symbol-defs.svg#hostel-Check-out"></use>
+                        </svg>
+                    </div>
+                    <input name="CheckOut" type="text" class="l_Check-out_date" id="CheckOut" placeholder="退房日期"
+                        autocomplete="off">
+
+                </div>
+            </div>
+        </div>
+        <input type="text" class="l_number_pet" id="l_number_pet" placeholder="毛孩數量">
+        <div class="l_next_check"><a href="">確認預約日期</a></div>
+    </div>
+    <div class="l_main_left_2">
+
+        <button class="l_immediately2">立即預約</button>
+    </div>
+    <div class="l_main_left_mobile">
+        <div class="l_money_oneday">NT$900/天</div>
+        <div class="l_immediately">立即預約</div>
+    </div>
 
 
 
@@ -1189,6 +1199,7 @@
             dateFormat: 'm/d/Y',
             allowInput: true,
             minDate: "today",
+            disableMobile: "true",
             plugins: [new rangePlugin({ input: "#CheckOut" })]
         });
 
