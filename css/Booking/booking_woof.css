@@ -45,6 +45,7 @@
     height: 110%;
     animation-name: img-animation;
      animation-duration: 3s;
+     animation-fill-mode:forwards;
    
 }
 @keyframes img-animation{
@@ -280,7 +281,9 @@ margin: 50px 300px 30px ;
    
   
 }
-
+.l_btn_cat2{
+    background-color:var(--mainyellow);
+}
 
 .l_btn_dog:hover,
 .l_btn_cat:hover{
