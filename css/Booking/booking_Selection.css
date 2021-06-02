@@ -217,19 +217,36 @@ h6{
      height: 150px;
      
 }
-.btn{
+.l_lookmore{
     margin-top: 80px;
     width: 170px;
     height: 40px;
     background-color:var(--mainyellow);
     border-radius: 50px;
+    list-style: none;
+    text-align: center;
+    line-height: 40px;
+ 
+   
+    
+   
+}
+.l_lookmore a {
+    text-decoration: none;
     font-size:18px ;
     font-family: var(--mfont);
      color: var(--maindarkgray);
      
 }
+.l_lookmore a:hover{
+    text-decoration: none;
+    font-size:18px ;
+    font-family: var(--mfont);
+     color: var(--maindarkgray);
+}
 
-.btn img{
+
+.l_lookmore img{
     width: 33px;
     height: 33px;
     
